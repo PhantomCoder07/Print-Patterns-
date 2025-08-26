@@ -1,0 +1,43 @@
+/*
+    a
+   b a
+  c b a
+ d c b a
+e d c b a
+*/
+#include <stdio.h>
+int main()
+{
+    int i,j,n;
+    printf ("Enter the limit: ");
+    scanf ("%d",&n);
+    char a[n][n];
+    printf ("Output:\n");
+    for (i=0; i<n; i++)
+    {
+        for (j=0; j<n; j++)
+        {
+            if (j==n-(n-i))
+                a[i][j]='a';
+            if (a[i][j]!='a')
+                a[i][j]=a[i-1][j]+1;
+        }
+    }
+    for (i=0; i<n; i++)
+    {
+        for (j=0; j<n; j++)
+        {
+            if (i+j<n-1)
+                printf(" ");
+        }
+        for (j=0; j<n; j++)
+        {
+            if (i>=j)
+                printf("%c ",a[i][j]);
+            else
+                printf("  ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
