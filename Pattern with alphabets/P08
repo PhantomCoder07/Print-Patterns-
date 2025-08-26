@@ -1,0 +1,41 @@
+/*
+a a a a a
+a b b b b
+a b c c c
+a b c d d
+a b c d e
+*/
+#include <stdio.h>
+int main()
+{
+    int i,j,n;
+    char m='a';
+    printf ("Enter the limit: ");
+    scanf ("%d",&n);
+    char arr[n][n];
+    printf ("Output:\n");
+    for (i=0; i<n; i++)
+    {
+        for (j=0; j<n; j++)
+        {
+            if (i==0 || j==0)
+                arr[i][j]='a';
+        }
+    }
+    for (i=1; i<n; i++)
+    {
+        for (j=1; j<n; j++)
+        {
+            arr[i][j]=arr[i-1][j-1]+1;
+        }
+    }
+    for (i=0; i<n; i++)
+    {
+        for (j=0; j<n; j++)
+        {
+            printf("%c ",arr[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
