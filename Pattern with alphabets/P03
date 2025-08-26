@@ -1,0 +1,28 @@
+/*
+				z
+			y	x
+		W	v	u
+	t	S	r	q
+p	o	N	m	l
+*/
+#include <stdio.h>
+int main()
+{
+    int i,j,n;
+    char ch='z';
+    printf ("Enter limit: ");
+    scanf ("%d",&n);
+    printf ("Output:\n");
+    for (i=0; i<n; i++)
+    {
+        for (j=0; j<n; j++)
+        {
+            if (i+j>=n-1)
+                printf ("%c ",ch--);
+            else
+                printf ("  ");
+        }
+        printf ("\n");
+    }
+    return 0;
+}
