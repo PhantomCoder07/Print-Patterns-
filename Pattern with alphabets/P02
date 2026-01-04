@@ -1,9 +1,9 @@
 /*
 a				
 b	c			
-d	e	F		
-g	h	I	j	
-k	l	M	n	o
+d	e	f		
+g	h	i	j	
+k	l	m	n	o
 */
 #include <stdio.h>
 int main()
