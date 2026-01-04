@@ -1,9 +1,9 @@
 /*
 				z
 			y	x
-		W	v	u
-	t	S	r	q
-p	o	N	m	l
+		w	v	u
+	t	s	r	q
+p	o	n	m	l
 */
 #include <stdio.h>
 int main()
